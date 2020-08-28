@@ -1,0 +1,240 @@
+<!--https://gelecegiyazanlar.turkcell.com.tr/konu/web-programlama/egitim/101-->
+
+<!--HTML, Hyper Text Markup Language ifadesinden oluşturulmuş bir İngilizce kısaltmadır ve Türkçe'ye 
+    "Hiper Metin İşaretleme Dili" şeklinde çevrilebilir. Bir işaretleme dilinin temel işlevi, bir belge 
+    içindeki metnin (text) yapısını, biçimini ve genel görünümünü tanımlayacak kuralları içermesi ve bunun 
+    uygulanmasına olanak vermesidir.-->
+
+<!--HTML öğrenebilmeniz için herhangi bir metin editörünü kullanmanız yeterlidir. Bu noktada size 
+    Sublime Text, Brackets ve Notepad++ gibi bazı başarılı metin editörlerini önerebiliriz. 
+    Bu editörler, HTML kodlarını yazarak bir web sitesi inşa etmek için kullanılmaktadır. 
+    Bunun dışında, görsel olarak da bir web sitesi oluşturmak mümkündür. Bunun için 
+    Microsoft Expression Web, Adobe Dreamweaver ve BlueGriffon gibi farklı araçlar kullanılabilir.-->
+
+<!--WYSIWYG,"What You See Is What You Get" -->
+
+<!DOCTYPE html> <!--HTML5 versiyonu kullandığımızı tanımlar-->
+
+<html>  
+    <!-- <html> root tag'dir. HTML etiketi, tarayıcınıza, dosyanın HTML kodu ile yüklenmiş bilgi içerdiğini 
+    bildirir. Dosya adındaki .html uzantısı ise bu dosyanın bir HTML belgesi olduğunu belirtir.-->
+<head>
+<title>BASİT BİR HTML METNİ</title>
+<!--title(başlık) sayfayı tanımlayıcı nitelikte ve kısa olmalıdır.-->
+
+<!--Tüm meta etiketleri <head> .. </head> kodları arasına yazılır.-->
+<meta name="keywords" CONTENT="bilgisayar dilleri, programlama dilleri, yazılım">
+<!--Keywords: Sitenizin içeriğini oluşturan kelimelerin bulunduğu etikettir.-->
+<meta name="description" content="Sitenizin içeriği hakkında geniş bilgi">
+<!--Description: Bu etiket site hakkında bilgi veren temel etiketlerden biridir.-->
+<meta name="Author" content="Adınız, E-Posta Adresiniz">
+<!--Author: Site yapımcısının adı, iletişim bilgilerinin bulunduğu etikettir.-->
+<meta charset="utf-8">
+<!--charset="utf-8" sayfanın karakter kümesini de tanımlar-->
+
+</head>
+
+<body>
+<!--Başlıklar (Headings)
+HTML metni içinde H1 ile H6 aralığında ölçeklendirilmiş 6 farklı düzeyde başlık kullanılabilir. 
+Burada H1 en büyük başlığı, H6 ise en küçük başlığı simgelemektedir.
+Bir başlık elemanının genel yazılış biçimi, <Hx>Başlık Metni</Hx> şeklindedir. -->
+
+<!--Paragraflar (Paragraphs)
+Oluşturacağınız Web sayfası üzerine yerleştireceğiniz metni ayrı paragraflar şeklinde ifade etmek için 
+<p>  ve </p> etiketlerini kullanmalısınız.-->
+
+<!--Listeler (Lists)
+HTML, çeşitli türlerde listelerin oluşturulabilmesine olanak sağlar. Bu liste türleri,
+Numaralanmamış liste(unordered list)
+Numaralanmış liste(ordered list)
+İç içe liste
+şeklindedir.-->
+
+<!--Çok Kullanılan Body Etiketleri
+* <pre></pre> - preformatted (önceden biçimlendirilmiş); Sabit genişlikli bir yazıtipi oluşturmak için 
+* <br> - break; satır atlar
+* <hr> - horizontal; yatay bir çizgi çizer
+* <b> - Bold text
+* <strong> - Important text
+* <i> - Italic text
+* <em> - Emphasized text
+* <mark> - Marked text
+* <small> - Small text
+* <del> - Deleted text
+* <ins> veya <u> - Inserted text - altıçizili
+* <sub> - Subscript text
+* <sup> - Superscript text
+-->
+
+<!--Link Oluşturmak-->
+<a href="http://gelecegiyazanlar.turkcell.com.tr">Anasayfa</a>
+
+<!--Target özelliği
+Target özelliği sayesinde, bağlanan web sitesinin nerede açılacağını belirleyebilirsiniz. 
+Örneğin adresin yeni bir sayfada açılmasını sağlamak için aşağıdaki HTML kodunu girmek gerekir.-->
+
+<a href="http://gelecegiyazanlar.turkcell.com.tr" target="_blank">Turkcell Geleceği Yazanlar</a>
+
+<!--
+_blank 	:sayfayı yeni bir pencere ya da sekmede açar.
+_self	:sayfayı aynı çerçevede açar. (öntanımlı olan özelliktir)
+_parent :sayfayı bir üst çerçevede açar.
+_top	:sayfayı en üst çerçevede açar.
+-->
+
+<!--HTML'de Görseller-->
+<!--<img src="resimkonumu/resimadi">-->
+<img src="https://gelecegiyazanlar.turkcell.com.tr/sites/default/files/2014_degerlendirme.jpg" />
+
+<!--Görüntülenecek olan görselin boyutları HTML kodu içinde belirtilebilir. 
+    height parametresiyle görselin piksel cinsinden yüksekliğini ve width parametresiyle de 
+    piksel cinsinden genişliğini belirtebilirsiniz.-->
+<img src="https://gelecegiyazanlar.turkcell.com.tr/sites/default/files/2014_degerlendirme.jpg" width="50" height="50" />
+
+<!--Görselin sayfa üzerindeki konumunun belirlenmesi için align parametresini kullanabilirsiniz. 
+    Sola yaslamak için left, sağa yaslamak için right, ortalamak için center, üst için top, 
+    alt için ise bottom şeklinde konum tanımlanız yeterli olacaktır.-->
+<img src="https://gelecegiyazanlar.turkcell.com.tr/sites/default/files/2014_degerlendirme.jpg" align="left" />
+<img src="https://gelecegiyazanlar.turkcell.com.tr/sites/default/files/2014_degerlendirme.jpg" align="right" />
+<img src="https://gelecegiyazanlar.turkcell.com.tr/sites/default/files/2014_degerlendirme.jpg" align="center" />
+<img src="https://gelecegiyazanlar.turkcell.com.tr/sites/default/files/2014_degerlendirme.jpg" align="top" />
+<img src="https://gelecegiyazanlar.turkcell.com.tr/sites/default/files/2014_degerlendirme.jpg" align="bottom" />
+
+<!--Çerçeve ve Alternatif Metin Ekleme-->
+<!--Web sayfası üzerinde görüntülenecek olan görselin çerçeve kalınlığı border= 
+    parametresiyle belirlenebilir. Oluşturulacak çerçevenin kalınlığını piksel cinsinden belirtebilirsiniz.-->
+<img src="https://gelecegiyazanlar.turkcell.com.tr/sites/default/files/2014_degerlendirme.jpg" border="5">
+
+<!--Alt parametresiyle belirtilen metin, görsel herhangi bir nedenle görüntülenemediği takdirde sayfaya aktarılır.-->
+<img src="https://gelecegiyazanlar.turkcell.com.tr/sites/default/files/2014_degerlendirme.jpg" alt="Resim için alternatif metin" height="100" width="65"> 
+
+<!--Bir görseli hiperlink olarak kullanma-->
+<a href="https://gelecegiyazanlar.turkcell.com.tr">
+<img src="https://gelecegiyazanlar.turkcell.com.tr/sites/default/files/2014_degerlendirme.jpg" alt="Geleceği Yazanlar Ana Sayfa" width="100" height="100" border="3">
+</a>
+
+<!--HTML Stilleri-->
+
+<!--Arka plan rengini değiştirmek için bgcolor özelliğini kullanmalısınız. -->
+<!--
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body style="background-color:powderblue;">
+    <h3 align="center">MİMAR SİNAN ÜNİVERSİTESİ</h3> 
+    <h3 align="center">DEVLET GÜZEL SANATLAR AKADEMİSİ</h3>
+    <h3 align="center">GELENEĞİNİ SÜRDÜRÜYOR</h3>    
+
+    <p>I am normal</p>
+    <p style="color:red;">I am red</p>
+    <p style="color:blue;">I am blue</p>
+    <p style="font-size:50px;">I am big</p>
+  </body>
+</html>
+-->
+
+<!--HTML Tablolar-->
+<!--
+table etiketi: [code]<table> </table>[/code] HTML kodu içinde bir tablo tanımlar. Şayet border parametresi tanımlanmışsa tarayıcı tabloyu çevre sınırları ile görüntüler.
+caption etiketi: [code]<caption> </caption>[/code] tablonun başlığı için bir ifade tanımlar. Tablo başlığının öntanımlı konumu, tablonun üstünde ve ortalanmış durumdadır.
+tr etiketi: [code]<tr> </tr>[/code] Tablo içinde bir tablo satırını tanımlar.
+th etiketi: [code]<th> </th>[/code] bir tablo başlık hücresi tanımlar. Öntanımlı olarak bu hücredeki metin ortalanmış ve koyu (bold) renklidir.
+td etiketi: [code]<td></td>[/code] Bir tablo hücresi tanımlar. Öntanımlı olarak bu hücre içindeki metin sola yanaşık ve düşeyde ortalanmış vaziyettedir.
+-->
+
+<!--
+Align parametresi: Bir hücre verisinin yatay konumunu belirler. Left, Right, Center parametrelerini kullanarak belirtirsiniz.
+Valign parametresi: Bir hücre verisinin düşey konumunu belirler. Top, Middle, Bottom parametrelerini kullanarak belirtirsiniz.
+Colspan parametresi: Bir hücrenin kapsadığı sütun sayısıdır. Belirttiğiniz kadar sütun oluşmasını sağlar.
+Rowspan parametresi: Hücrenin kapsadığı satır sayısıdır. Belirttiğiniz kadar satır oluşmasını sağlar.
+Nowrap parametresi: Otomatik metin akışını iptal eder.
+-->
+
+<table border="2">
+
+    <!-- tablo tanımı başlangıcı -->
+    <caption> ÜLKELER VE NÜFUSLARI </caption>  
+     
+    <!-- başlık tanımı -->
+    <tr>  
+    
+    <!-- başlık satırı tanımı -->
+    <th>ÜLKE ADI</th>    
+    <th>NÜFUSU</th>    
+    </tr> 
+    
+    <!-- başlık satırı tanımının sonu -->
+    <tr>  
+    
+    <!-- ilk satır tanımı -->
+    <td>AVUSTURYA </td>
+    <td>8,000,000</td>    
+    </tr> 
+    
+    <!-- ilk satır tanımının sonu -->
+    <tr>  
+    <td>ALMANYA</td>
+    <td>80,000,000</td>    
+    </tr> 
+    <tr>  
+    
+    <!-- son satır tanımının başlangıcı -->
+    <td>TÜRKİYE</td>
+    <td>73,000,000</td>    
+    </tr> 
+    
+    <!-- son satır tanımının sonu -->
+    </table>
+    
+    <!-- tablo tanımının sonu -->
+
+<!--HTML Formlar-->
+<div align="center">
+<font face="courier" size="6" color="red">
+BENZERSİZ ŞEHİR SALZBURG TURLARI İÇİN<br>
+BİZİ ARAYINIZ
+</font>
+</div>
+<hr width="90%" size="5" noshade>
+<form method="post" action="form_gonder.php">
+<input type="text" name="adiniz">ADINIZ<br>
+<input type="text" name="soyadiniz">SOYADINIZ<br>
+<input type="text" name="adresiniz">ADRESİNİZ<br>
+<input type="text" name="tel-no">TEL.NO<br>
+<input type="submit" value="GÖNDER" align="center">
+<input type="reset" value="SİL" align="center">
+</form>
+<hr width="90%" size="5" noshade>
+<div align="center">
+<address align="left">
+<font face="Arial">
+<br>ÖRNEK TOUR<br>
+<a href="mailto:ornek@ornektour.com.tr">ornek@ornektour.com.tr</a>
+<br>
+Mevcudiyet Cad.84-80767-Şişli<br>
+İSTANBUL<br>
+</font>
+</address>
+</div>
+
+<!--Metin Alanı (Text Field): Kısa metin girişlerini yüklemek için kullanılabilecek olan alanlardır. 
+    İsimler, arama anahtarları adresleri girmek için kullanılır.-->
+
+<!--Seçme Listeleri (Select List): Seçme listesi, kullanıcının içinden bir ya da daha fazla elemanı seçebileceği veri listeleridir. 
+    Uzun fakat sonlu bir seçenekler listesi sunmak amacıyla kullanılabilir. Örneğin bir ülkeler listesinden ülke seçmek ya da bir yazıcılar 
+    listesinden yazıcı seçmek gibi eylemler bu elemanın kullanılmasını gerektirir.-->
+
+<!--Denetim Kutusu (Checkbox): Denetim kutusu, web sayfasını ziyaret eden İnternet kullanıcılarının bir veriler listesinden;
+     hiç, bir veya birden çok veri seçmek için kullanılır.-->
+
+<!--Radyo düğmesi (Radio button): Kullanıcılara tek bir seçim yapma olanağı veren kontrol nesnesidir.-->
+
+<!--Metin bölgesi (TextArea): Normalden uzun olan metinler için kullanılabilecek olan kontrol nesnesidir. Serbest biçimli cevaplar için kullanılabilir.-->
+
+<!--Submit ve Reset düğmeleri: Submit (Gönder) düğmesiyle form üzerine girilen bilgi işlenmesi için URL'i verilen sunucu sayfasına gönderilir. 
+    Reset (Sıfırla ya da Temizle) düğmesiyle form içindeki bilgi silinerek başlangıç konumuna getirilir.-->
+    
+</body>
+</html>
